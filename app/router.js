@@ -20,8 +20,8 @@ module.exports = app => {
   router.get('/file', controller.file.list);
   // 创建文件夹
   router.post('/file/createdir', controller.file.createdir);
-  // // 重命名
-  // router.post('/file/rename', controller.file.rename);
+  // 重命名
+  router.post('/file/rename', controller.file.rename);
   // // 批量删除文件
   // router.post('/file/delete', controller.file.delete);
   // // 搜索文件
