@@ -22,10 +22,10 @@ module.exports = app => {
   router.post('/file/createdir', controller.file.createdir);
   // 重命名
   router.post('/file/rename', controller.file.rename);
-  // // 批量删除文件
-  // router.post('/file/delete', controller.file.delete);
-  // // 搜索文件
-  // router.get('/file/search', controller.file.search);
+  // 批量删除文件
+  router.post('/file/delete', controller.file.delete);
+  // 搜索文件
+  router.get('/file/search', controller.file.search);
   // // 创建分享
   // router.post('/share/create', controller.share.create);
   // // 我的分享列表
