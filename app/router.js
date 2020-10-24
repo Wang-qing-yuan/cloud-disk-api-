@@ -30,8 +30,8 @@ module.exports = app => {
   router.post('/share/create', controller.share.create);
   // 我的分享列表
   router.get('/share/list', controller.share.list);
-  // // 查看分享
-  // router.get('/share/:sharedurl', controller.share.read);
+  // 查看分享
+  router.get('/share/:sharedurl', controller.share.read);
   // // 保存到自己的网盘
   // router.post('/share/save_to_self', controller.share.saveToSelf);
 };
