@@ -16,10 +16,10 @@ module.exports = app => {
   router.post('/upload', controller.file.upload);
   // 剩余容量
   router.get('/getsize', controller.user.getSize);
-  // // 文件列表
-  // router.get('/file', controller.file.list);
-  // // 创建文件夹
-  // router.post('/file/createdir', controller.file.createdir);
+  // 文件列表
+  router.get('/file', controller.file.list);
+  // 创建文件夹
+  router.post('/file/createdir', controller.file.createdir);
   // // 重命名
   // router.post('/file/rename', controller.file.rename);
   // // 批量删除文件
